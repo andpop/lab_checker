@@ -2,7 +2,7 @@ from transliterate import translit
 
 print("Hello")
 with open('302.txt', encoding='utf-8') as source_file:
-    with open('trans.txt', 'a') as translit_file:
+    with open('trans.txt', 'w') as translit_file:
         for name in source_file:
             translit_name = translit(name, "ru", reversed=True)
             print(translit_name)
